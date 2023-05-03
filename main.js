@@ -82,3 +82,9 @@ const ingredientesDeCadaPizza = pizzas.map((pizza) => {
     // `La Pizza ${pizza.nombre} tiene los siguientes ingredientes: ${pizza.ingredientes}`
     ();
 });
+
+pizzas.forEach((pizza) => {
+  pizza.ingredientes.forEach((ingrediente) => {
+    console.log(ingrediente);
+  });
+});
